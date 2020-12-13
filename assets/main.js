@@ -9,7 +9,7 @@ function formattedDate(date) {
     const Options = {
         weekday: 'long',
         year: 'numeric',
-        month: 'long',
+        month: 'numeric',
         day: 'numeric',
     }
     return date.toLocaleDateString('hu-HU', Options);

@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A common TODO list application</title>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <div class="todo__container">
-        <div class="todo__main">
-            <div class="todo__date"></div>
-            <div class="todo__inputrow">
-                <input type="text" class="todo__input" placeholder="Take the garbage out!">
-                <button class="todo__addnew">+</button>
-            </div>
-            <div class="todo__tasks">Time to chill! You have no todos.</div>
+    <div class="todo__main">
+        <div class="todo__date"></div>
+        <div class="todo__inputrow">
+            <input type="text" class="todo__input" placeholder="Take the garbage out!">
+            <button class="btn btn__new">+</button>
+        </div>
+        <div class="todo__tasks">Time to chill! You have no todos.</div>
+        <div class="todo__mainbtn">
+            <button class="btn btn__show--complete">Show Complete</button>
+            <button class="btn btn__clear--all">Clear All</button>
         </div>
     </div>
+
+   
     
     <script src="./assets/main.js"></script>
 </body>
