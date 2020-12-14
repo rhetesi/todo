@@ -16,15 +16,29 @@
             <input type="text" class="todo__input" placeholder="Take the garbage out!">
             <button class="btn btn__new">+</button>
         </div>
-        <div class="todo__tasks">Time to chill! You have no todos.</div>
-        <div class="todo__mainbtn">
-            <button class="btn btn__show--complete">Show Complete</button>
-            <button class="btn btn__clear--all">Clear All</button>
+        <!-- <div class="todo__tasks">
+            <p class="nochill">You have 
+                <span class="todo__pending">0</span>
+                pending item(s).
+            </p>
+            <p class="chill">
+                Time to chill! You have no todos.
+            </p>
+        </div> -->
+        <p class="todo__chillorpending">You have
+            <span class="todo__pending">0</span>
+            pending item(s).
+        </p>
+        <div class="todo__list--pending"></div>
+        <div class="todo__list--done"></div>
+        <div class="todo__footer">
+            <button class="btn footer__btn--complete">Show Complete</button>
+            <button class="btn footer__btn--clear">Clear All</button>
         </div>
     </div>
 
-   
-    
+
+
     <script src="./assets/main.js"></script>
 </body>
 
