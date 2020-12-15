@@ -1,5 +1,6 @@
 'use strict';
 
+import localDB from './localDB.js';
 // show Today
 
 const now = new Date();
@@ -20,16 +21,10 @@ showToday.textContent = formattedDate(now);
 
 // localStorage handler
 
-const localDB = {
-    setItem(key, value) {
-        value = JSON.stringify(value);
-        localStorage(key, value);
-    },
-    getItem(key) {
-        const value = localStorage.getItem(key);
-        return JSON.parse(value);
-    },
-    removeItem(key) {
-        localStorage.removeItem(key);
-    }
+
+// Count pending todos.
+const showPending = () => {
+    const pendingsNum = todos.filter(todo => !todo.done).length
 };
+
+// const init() 
